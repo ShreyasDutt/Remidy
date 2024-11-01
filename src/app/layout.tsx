@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import {ClerkProvider, SignedIn, SignedOut, SignInButton, UserButton} from "@clerk/nextjs";
+export const config = {
+  runtime: 'nodejs',
+};
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",

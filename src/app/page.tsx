@@ -5,6 +5,10 @@ import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import Logo from "/public/Remidy.png";
+export const config = {
+    runtime: 'nodejs',
+};
+
 
 const Home = () => {
     const { isSignedIn } = useAuth();

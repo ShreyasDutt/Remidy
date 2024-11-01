@@ -5,6 +5,9 @@ import Bottomnav from "@/app/Components/Bottomnav";
 import Link from "next/link";
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import {UserButton} from "@clerk/nextjs";
+export const config = {
+    runtime: 'nodejs',
+};
 
 const HealthMetricCard = ({ icon: Icon, label, value, color }) => (
     <div className={`transform transition-all duration-300 hover:scale-105 bg-white p-4 rounded-xl shadow-md border-l-4 ${color}`}>
